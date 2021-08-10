@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         .container{
+          display: flex;
+          justify-content: center;
+          height: 100vh;
+          align-items: center;
+      }
+      *{
+        margin:0px;
+        padding: 0px;
+    }
         video::-internal-media-controls-download-button {display:none}
-        video::-webkit-media-controls-enclosure {overflow:hidden}
-        video::-webkit-media-controls-panel {width: calc(100% + 18px);
-      
+         video::-webkit-media-controls-enclosure {overflow:hidden}
+        video::-webkit-media-controls-panel {width: calc(100% + 18px)};
+     
     </style>
    
 </head>
 
 <body>
-    
-<div>
-    <video id="video" width="320" controlslist="nodownload" controls height="240">
+  
+<div class="container">
+    <video id="video" width="700" controlslist="nodownload" controls height="440">
         <source src="https://azm.ojs.inecol.mx/public/journals/3/pkp_workflow.mp4" type="video/mp4">
     </video>
     
